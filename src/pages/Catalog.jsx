@@ -49,7 +49,7 @@ function Catalog() {
 
         {error && <p role="alert">Could not load catalog: {error}</p>}
 
-        {!loading && !error && books.length === 0 && (
+        {!loading && !error && books.ength === 0 && (
           <p>No books are available yet.</p>
         )}
 
