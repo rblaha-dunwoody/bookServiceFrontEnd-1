@@ -1,7 +1,3 @@
-import { useState, useEffect } from "react";
-import BookCard from "../components/BookCard";
-import "../App.css";
-
 function Catalog() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -49,7 +45,7 @@ function Catalog() {
 
         {error && <p role="alert">Could not load catalog: {error}</p>}
 
-        {!loading && !error && books.ength === 0 && (
+        {!loading && !error && books.length === 0 && (
           <p>No books are available yet.</p>
         )}
 
