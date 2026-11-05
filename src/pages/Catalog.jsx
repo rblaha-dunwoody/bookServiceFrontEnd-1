@@ -42,7 +42,7 @@ function Catalog() {
   return (
     <main>
       <div className="catalog-header">
-        <h1>Find Your Next Favorite</h1>
+        <h1>See What's New!</h1>
         <p>Explore our catalog</p>
 
         {loading && <p>Loading books...</p>}
