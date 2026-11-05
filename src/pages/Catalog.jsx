@@ -1,3 +1,7 @@
+import { useState, useEffect } from "react";
+import BookCard from "../components/BookCard";
+import "../App.css";
+
 function Catalog() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
