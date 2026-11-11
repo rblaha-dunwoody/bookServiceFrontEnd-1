@@ -23,8 +23,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Run tests
+        run: npm test -- --run
+
       - name: Build React application
         run: npm run build
 
-      - name: Run tests
-        run: npm test -- --run
+      - name: Build Docker image
+        run: docker build -t book-frontend:latest .
